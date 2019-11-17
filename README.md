@@ -1,5 +1,5 @@
 # RNE Tooltip
-Custom component based on Tooltip from react-native-elements to vary height based on tooltip's text length .
+Custom component based on Tooltip from react-native-elements to vary height based on tooltip's text length.
 
 ## Reason for doing this
 [Tooltip in react-native-elements](https://react-native-elements.github.io/react-native-elements/docs/tooltip.html) does not vary the popover's height or width according to the text component passed via the `popover` prop.

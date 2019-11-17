@@ -25,6 +25,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "Custom component based on Tooltip from react-native-elements to vary height based on tooltip's text length.",
+    "githubUrl": "https://github.com/tingzhouu/rn-rne-tooltip"
   }
 }
