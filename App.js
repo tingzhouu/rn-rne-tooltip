@@ -1,8 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { Tooltip } from 'react-native-elements';
+import CustomTooltip from './CustomTooltip';
 
-const TOOLTIP_TEXT = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae urna non leo maximus placerat id vel justo. Nulla in egestas risus. Ut ac sapien lorem. Sed non massa non diam sodales viverra. Curabitur non vestibulum erat, id efficitur justo.';
+const TOOLTIP_TEXT = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae urna non leo maximus placerat id vel justo. Nulla in egestas risus. Ut ac sapien lorem. Sed non massa non diam sodales viverra. Curabitur non vestibulum erat, id efficitur justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae urna non leo maximus placerat id vel justo. Nulla in egestas risus. Ut ac sapien lorem. Sed non massa non diam sodales viverra. Curabitur non vestibulum erat, id efficitur justo.';
 
 export default function App() {
   return (
@@ -10,9 +10,9 @@ export default function App() {
       <View style={styles.field}>
         <View style={styles.fieldHeader}>
           <Text>Field Title</Text>
-          <Tooltip popover={<Text>{TOOLTIP_TEXT}</Text>}>
-          <Text>Press me</Text>
-        </Tooltip>
+          <CustomTooltip
+            tooltipText={TOOLTIP_TEXT}
+          />
         </View>
         <View style={styles.fieldInput}>
           <Text>Dummy Input Text</Text>
